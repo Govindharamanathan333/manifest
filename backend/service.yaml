@@ -1,1 +1,14 @@
-
+apiVersion: v1
+kind: Service
+metadata:
+  name: thunderbolt-backend-service
+  namespace: thunderbolt-test
+spec:
+  selector:
+    app: thunderbolt-backend
+  ports:
+    - protocol: TCP
+      port: 5006
+      targetPort: 5006
+      nodePort: 30999
+  type: NodePort
