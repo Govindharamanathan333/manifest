@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: thunderbolt-backend-container
-          image: 10.10.30.22:8085/thunderbolt_backend:v61
+          image: 10.10.30.22:8085/thunderbolt_backend:v62
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 5006
